@@ -374,6 +374,28 @@
 
     <script src="../js/newsletter.js"></script>
 
+      <!-- Search Redirect Script -->
+    <script>
+        (function() {
+            // Handle search form submission - redirect to menu.html with search query
+            const searchForms = document.querySelectorAll('.navbar-search');
+            
+            searchForms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const searchInput = form.querySelector('input[name="search"]');
+                    const query = searchInput.value.trim();
+                    
+                    if (query) {
+                        window.location.href = `./menu.html?search=${encodeURIComponent(query)}`;
+                    } else {
+                        window.location.href = './menu.html';
+                    }
+                });
+            });
+        })();
+    </script>
+
 </body>
 
 </html>
