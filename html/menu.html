@@ -45,15 +45,21 @@
 
       <!-- DESKTOP MENU -->
       <ul class="navList flex gap-3 between">
-        <li><a href="./index.html#home">Home</a></li>
-        <li><a href="./index.html#services">Services</a></li>
-        <li><a class="active" href="./menu.html">Menu</a></li>
-        <li><a href="./aboutUs.html">About Us</a></li>
-        <li><a href="./contactUs.html">Contact Us</a></li>
-        <li><a href="nearbyres.html">Nearby Restaurants</a></li>
+        <li><a href="./index.html#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="./index.html#services" data-i18n="nav.services">Services</a></li>
+        <li><a class="active" href="./menu.html" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="./aboutUs.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="./contactUs.html" data-i18n="nav.contact">Contact Us</a></li>
+        <li><a href="nearbyres.html" data-i18n="nav.nearby">Nearby Restaurants</a></li>
       </ul>
 
       <div class="desktop-action flex gap-2">
+        <div class="language-selector">
+          <select id="language-select">
+            <option value="en">🇺🇸 English</option>
+            <option value="hi">🇮🇳 हिंदी</option>
+          </select>
+        </div>
         <button class="desktop-action theme-toggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-moon"></i>
         </button>
@@ -90,26 +96,26 @@
     <section id="menu">
       <div class="wrapper mt-4 text-center">
         <div class="text-center">
-          <h5>Our menu</h5>
-          <h2>The Most Popular</h2>
+          <h5 data-i18n="menu.ourMenu">Our menu</h5>
+          <h2 data-i18n="menu.mostPopular">The Most Popular</h2>
         </div>
 
         <!-- Filter Bar -->
         <div class="filter-bar flex gap-2 mt-one">
-          <input type="text" id="search" placeholder="Search your favorite dish..." />
+          <input type="text" id="search" data-i18n-placeholder="menu.searchPlaceholder" placeholder="Search your favorite dish..." />
           <div class="custom-select" id="priceSelector">
-            <div class="selected">All Prices ▾</div>
+            <div class="selected" data-i18n="menu.allPrices">All Prices ▾</div>
             <ul class="options">
-              <li data-value="all">All Prices</li>
-              <li data-value="low">Below ₹100</li>
-              <li data-value="mid">₹100 - ₹200</li>
-              <li data-value="high">Above ₹200</li>
+              <li data-value="all" data-i18n="menu.allPrices">All Prices</li>
+              <li data-value="low" data-i18n="menu.below100">Below ₹100</li>
+              <li data-value="mid" data-i18n="menu.midRange">₹100 - ₹200</li>
+              <li data-value="high" data-i18n="menu.above200">Above ₹200</li>
             </ul>
           </div>
-          <button id="favToggle" class="fav-toggle" aria-pressed="false" aria-label="Show favorites only">❤ Favorites</button>
-          <button id="filterVeg" class="veg-nonveg-btn">Veg</button>
-          <button id="filterNonVeg" class="veg-nonveg-btn">Non-Veg</button>
-          <button id="filterAll" class="veg-nonveg-btn">All</button>
+          <button id="favToggle" class="fav-toggle" aria-pressed="false" aria-label="Show favorites only" data-i18n="menu.favorites">❤ Favorites</button>
+          <button id="filterVeg" class="veg-nonveg-btn" data-i18n="menu.veg">Veg</button>
+          <button id="filterNonVeg" class="veg-nonveg-btn" data-i18n="menu.nonVeg">Non-Veg</button>
+          <button id="filterAll" class="veg-nonveg-btn" data-i18n="menu.all">All</button>
         </div>
 
         <!-- Menu Cards -->
@@ -119,15 +125,15 @@
 
         <!-- CART TAB -->
         <div class="cart-tab">
-          <h4>Your Cart</h4>
+          <h4 data-i18n="cart.yourCart">Your Cart</h4>
           <div class="cart-list"></div>
           <div class="total-container">
-            <h4>Total :</h4>
+            <h4 data-i18n="cart.total">Total :</h4>
             <h4 class="cart-total">$ 0.00</h4>
           </div>
           <div class="btn-container flex gap-2">
-            <a href="#" class="btn close-btn">Close</a>
-            <a href="#" class="btn check-out">Checkout</a>
+            <a href="#" class="btn close-btn" data-i18n="cart.close">Close</a>
+            <a href="#" class="btn check-out" data-i18n="cart.checkout">Checkout</a>
           </div>
         </div>
       </div>
@@ -190,8 +196,8 @@
         <p id="modalDescription"></p>
       </div>
       <div id="card-btn-container">
-        <button id="addToCartBtn">Add to Cart</button>
-        <button id="viewCartBtn">View Cart</button>
+        <button id="addToCartBtn" data-i18n="modal.addToCart">Add to Cart</button>
+        <button id="viewCartBtn" data-i18n="modal.viewCart">View Cart</button>
       </div>
     </div>
   </div>
@@ -203,6 +209,7 @@
   <div class="toast-container"></div>
 
   <!-- App JS -->
+  <script src="../js/i18n.js"></script>
   <script src="../js/app.js"></script>
   <script src="../js/cursor.js"></script>
 </body>
