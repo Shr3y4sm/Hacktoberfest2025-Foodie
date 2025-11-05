@@ -849,7 +849,7 @@ input[type="email"].success {
 }
 
 /* MEDIA STYLING */
-@media screen and (max-width: 1353px) {
+@media screen and (max-width: 800px) {
 
     /* HEADER STYLING */
     .navList,
@@ -954,8 +954,6 @@ input[type="email"].success {
         padding-inline: 1.5rem !important;
     }
 }
-
-
 
 /* Modal Styling */
 .modal {
@@ -1650,22 +1648,4 @@ button,
 [data-theme="dark"] .navbar-search {
     background: var(--bg-secondary);
     border-color: rgba(242, 189, 18, 0.9);
-}
-
-@media screen and (max-width: 1353px) {
-    .hidden-search{
-        display: none;
-    }
-
-    .desktop-action{
-        padding-right:30px;
-    }
-
-    .cart-icon{
-        margin-right:30px;
-    }
-
-    .hamberger{
-        margin-right:70px;
-    }
 }
