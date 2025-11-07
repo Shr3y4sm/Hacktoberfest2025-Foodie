@@ -53,7 +53,6 @@
             <!-- DESKTOP MENU -->
             <ul class="navList flex gap-3 between">
                 <li><a class="active" href="./index.html#home" data-i18n="nav.home">Home</a></li>
-                <li><a href="./index.html#services" data-i18n="nav.services">Services</a></li>
                 <li><a href="./menu.html" data-i18n="nav.menu">Menu</a></li>
                 <li><a href="./aboutUs.html" data-i18n="nav.about">About Us</a></li>
                 <li><a href="./contactUs.html" data-i18n="nav.contact">Contact Us</a></li>
@@ -62,13 +61,14 @@
             <div class="desktop-action flex gap-2">
                 <!-- Language Selector -->
                 <div class="custom-select" id="language-custom-select">
-                <div class="selected" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="language-custom-select">
-                    English
-                </div>
-                <ul class="options" role="listbox" tabindex="-1">
-                    <li data-value="en" role="option" aria-selected="true">English</li>
-                    <li data-value="hi" role="option">हिंदी</li>
-                </ul>
+                    <div class="selected" tabindex="0" aria-haspopup="listbox" aria-expanded="false"
+                        aria-labelledby="language-custom-select">
+                        English
+                    </div>
+                    <ul class="options" role="listbox" tabindex="-1">
+                        <li data-value="en" role="option" aria-selected="true">English</li>
+                        <li data-value="hi" role="option">हिंदी</li>
+                    </ul>
                 </div>
 
                 <!-- Search Input -->
@@ -129,7 +129,6 @@
             </ul>
         </nav>
     </header>
-
 
     <div id="offlineMessage"
         style="display: none; max-width: 500px; margin: 40px auto; padding: 20px; text-align: center; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;">
@@ -310,8 +309,8 @@
                         drop you email below to get daily update about us.</p>
 
                     <form id="newsletterForm" class="input-container flex" data-aos="fade-up" data-aos-delay="200">
-                        <input type="email" name="email" id="email" data-i18n="[placeholder]newsletter.placeholder"
-                            placeholder="Enter your email address" autocomplete="off" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address"
+                            autocomplete="off" required>
                         <button type="submit" class="btn" data-i18n="newsletter.subscribeButton">Subscribe</button>
                     </form>
                     <span class="error-message" id="emailError"></span>
@@ -547,7 +546,7 @@
             });
         })();
     </script>
-<script src="../js/language-dropdown.js"></script>
+    <script src="../js/language-dropdown.js"></script>
 </body>
 
 </html>
