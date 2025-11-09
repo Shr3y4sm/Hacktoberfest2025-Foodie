@@ -31,7 +31,7 @@
       font-family: 'Poppins', sans-serif;
       background: var(--bg);
       color: var(--text);
-      transition: background 0.3s ease, color 0.3s ease;
+      background : 0.3s ease, color 0.3s ease;
     }
 
     header {
@@ -56,17 +56,17 @@
     }
 
     main {
-      max-width: 1200px;
-      margin: 50px auto;
-      padding: 0 20px;
+      max-width: 1400px;
+      margin: 30px auto;
+      padding: 0 18px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
+      gap: 85px;
     }
 
     .dish-card {
       background: var(--card);
-      border-radius: 18px;
+      border-radius: 28px;
       overflow: hidden;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -111,8 +111,24 @@
       background: var(--header-bg);
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
-      margin-top: 60px;
+      margin-top: 100px;
     }
+
+    [data-theme="light"] header {
+  background: #ffed96; 
+  border-bottom: 1px solid #f4d03f;
+}
+    [data-theme="dark"] footer {
+      background: #444444; 
+      border-bottom: 1px solid #f4d03f;
+    }
+
+    @media (max-width: 600px) {
+  footer {
+    margin-top: 90px;
+  }
+}
+
 
     #themeToggle {
       position: fixed;
@@ -143,7 +159,7 @@
 
   <main>
     <div class="dish-card">
-      <img src="../imgs/fi1.png" alt="Truffle Mushroom Risotto">
+      <img src="../imgs/Truffle Mushroom Risotto.jpg" alt="Truffle Mushroom Risotto">
       <div class="dish-info">
         <h2>Truffle Mushroom Risotto</h2>
         <p>Creamy arborio rice with earthy truffles and wild mushrooms — a winter delicacy that comforts every soul.</p>
@@ -151,7 +167,7 @@
     </div>
 
     <div class="dish-card">
-      <img src="../imgs/fi2.png" alt="Citrus Basil Salmon">
+      <img src="../imgs/salmon.png" alt="Citrus Basil Salmon">
       <div class="dish-info">
         <h2>Citrus Basil Salmon</h2>
         <p>Fresh salmon glazed with tangy citrus and topped with basil — bright and refreshing for sunny summer days.</p>
@@ -159,7 +175,7 @@
     </div>
 
     <div class="dish-card">
-      <img src="../imgs/fi3.png" alt="Pumpkin Sage Ravioli">
+      <img src="../imgs/Pumpkin Sage Ravioli.jpg" alt="Pumpkin Sage Ravioli">
       <div class="dish-info">
         <h2>Pumpkin Sage Ravioli</h2>
         <p>Golden pasta pockets filled with roasted pumpkin purée, tossed in sage-infused butter — fall perfection.</p>
@@ -167,7 +183,7 @@
     </div>
 
     <div class="dish-card">
-      <img src="../imgs/fi4.png" alt="Berry Cheesecake Jar">
+      <img src="../imgs/fi5.png" alt="Berry Cheesecake Jar">
       <div class="dish-info">
         <h2>Berry Cheesecake Jar</h2>
         <p>Layered mini cheesecake with fresh berries and vanilla cream — a spring delight in every spoonful.</p>
@@ -175,12 +191,21 @@
     </div>
 
     <div class="dish-card">
-      <img src="../imgs/fi5.png" alt="Chocolate Lava Cake">
+      <img src="../imgs/chocolate-lava-cake.png" alt="Chocolate Lava Cake">
       <div class="dish-info">
         <h2>Chocolate Lava Cake</h2>
         <p>Warm, gooey chocolate cake with a molten heart — timeless and comforting all year round.</p>
       </div>
     </div>
+
+    <div class="dish-card">
+  <img src="../imgs/Caramel Pudding.jpg" alt="Caramel Pudding">
+  <div class="dish-info">
+    <h2>Caramel Pudding</h2>
+    <p>Soft, silky pudding topped with rich caramel glaze — a light dessert perfect for any season.</p>
+  </div>
+</div>
+
   </main>
 
   <footer>
