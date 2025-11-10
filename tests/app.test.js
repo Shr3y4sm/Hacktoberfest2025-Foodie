@@ -1,5 +1,5 @@
 // Sample unit test for app.js
-// You can expand this with real functions from app.js
+// You can expand this with real functions from app.js or any files you want to test.
 
 // Mock localStorage for testing
 const CART_STORAGE_KEY = 'foodie:cart';

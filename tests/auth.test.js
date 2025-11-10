@@ -1,5 +1,5 @@
 // Sample unit test for auth.js
-// You can expand this with real functions from auth.js
+// You can expand this with real functions from auth.js or any files you want to test.
 
 // Mock atob for Node.js environment
 global.atob = str => Buffer.from(str, 'base64').toString('binary');

@@ -97,7 +97,7 @@ This site’s entry file is at `html/index.html`. To use GitHub Pages:
 <img src="https://github.com/Mayur-Pagote/README_Design_Kit/blob/730d340c8008758ac291ebc555f818f851feda0f/Assets/RGB%20Line%20Thick.gif" width="100%" />
 
 
-## 🧪 Running Tests
+## 🧪 Command for Running Tests
 
 This project uses [Jest](https://jestjs.io/) for unit testing JavaScript modules.
 
