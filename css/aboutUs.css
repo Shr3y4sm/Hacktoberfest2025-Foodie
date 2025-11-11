@@ -293,7 +293,7 @@ p {
 .mission-back {
   transform: rotateY(180deg);
   background: linear-gradient(135deg, var(--gold-finger), #ffb84d);
-  color: #fff;
+  color: #fff; /* This color is for the entire back card, but the paragraph text needs to be dark */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,6 +309,7 @@ p {
   line-height: 1.4;
   word-wrap: break-word;
   width: 90%;
+  color: black; /* Changed to black for better contrast */
 }
 
 /* ===========================
